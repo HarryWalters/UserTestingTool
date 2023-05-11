@@ -1,0 +1,37 @@
+Hello there! Welcome to the UserTesting tool!
+
+This mini-suite of scripts can help you understand more from your user tests.
+
+If cv2 is not installed, you can install OpenCV on the terminal by typing:
+`pip3 install opencv-python`
+
+DIRECTORIES:
+    app_screenshots - put the screenshots of your application's pages
+    screen_recordings - put your screen recording videos.
+    
+    ---
+    * generated_metrics - stores user testing timing data as .csv files.
+                          (generates after running videoToMetricsConverter.py)
+    * generated_plots - stores visualisations of user testing timing data.
+                        (generates after running plottingMetrics.py)
+
+    Feel free to change the names of any of the directories you want.
+
+FILES:
+    videoToMetricsConverter.py - generates metrics on which parts of an
+                                 application a user visisted, and for how long.
+    plottingMetrics.py - generate visualisations of the generated metrics.
+    
+TIPS:
+    1. Please run videoToMetricsConverter.py BEFORE plottingMetrics.py.
+    2. Please let me know if there are any issues using the tool.
+       Ironically enough, I haven't conducted user testing for bug-fixes!
+    3. If you're stuck, just type --help after the name of the program.
+       i.e. python3 videoToMetricsConverter.py --help
+       You'll see a whole swathe of optional parameters that you can change.
+
+EXAMPLE USAGE:
+    python3 videoToMetricsConverter.py app_screenshots screen_recordings
+    python3 plottingMetrics.py app_screenshots generated_metrics
+
+Thank you for trying my mini-suite out! - Harry
