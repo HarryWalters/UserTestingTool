@@ -1,0 +1,11 @@
+Hello there! Right now, you're in screen_recordings.
+
+Please put your screen recordings (as videos) in this directory.
+
+Please note that the generated metrics and plots will use the same names as
+the video files.
+
+The videoToMetricsConverter.py script will load the videos from here,
+to generate metrics and plots.
+
+Thank you! - Harry

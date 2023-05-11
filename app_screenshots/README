@@ -1,0 +1,13 @@
+Hello there! Right now, you're in app_screenshots.
+
+Please put your app screenshots (as images) in this directory.
+Please make sure that every UNIQUE screen is shown here. If it's not here, 
+it won't be detected.
+
+Please give them useful names: the output plots will use the filenames in this
+directory. (e.g. home.png, settings.jpg, sign_up.jpeg, etc.)
+
+The idea is that videoToMetricsConverter.py will check every image in this 
+directory for a match against the current part of the video.
+
+Thank you! - Harry
