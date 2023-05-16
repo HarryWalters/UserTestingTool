@@ -226,7 +226,7 @@ pages = []
 
 for image_path in tqdm(image_names, unit="images", 
                        bar_format="{l_bar}{bar}| {remaining} {rate_fmt} "):
-    image_file = image_path.split("/")[1]
+    image_file = image_path.split("/")[-1].split("\\")[1]
     pages.append(image_file[:-4])
     # 2778, 1284 for iPhone 13 Pro Max
     temp_image = cv2.imread(image_path)
@@ -254,7 +254,7 @@ for video_name in video_names:
     timeline = []
     
     # if there's filepath information in the video_name,
-    if len(video_name.split("/")) > 1:
+    #if len(video_name.split("/")[-1].split("\\")) > 1:
         # just extract the file component, for prettiness later on.
         video_title = video_name.split("/")[-1]
     else:
