@@ -149,7 +149,7 @@ elif len(args.additional_image_types) > 1:
         image_extensions.append(temp_image_type)
 
 page_names = getFileNames(args.app_screens_directory, image_extensions)
-page_names = [filename[:-4].split("/")[-1] for filename in page_names]
+page_names = [filename[:-4].split("/")[-1].split("\\")[-1] for filename in page_names]
 
 
 #################################################
