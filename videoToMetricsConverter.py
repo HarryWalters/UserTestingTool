@@ -254,7 +254,7 @@ for video_name in video_names:
     timeline = []
     
     # if there's filepath information in the video_name,
-    #if len(video_name.split("/")[-1].split("\\")) > 1:
+    if len(video_name.split("/")[-1].split("\\")) > 1:
         # just extract the file component, for prettiness later on.
         video_title = video_name.split("/")[-1]
     else:
